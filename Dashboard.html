@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Sidebar with CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hidden checkbox to toggle sidebar -->
+    <input type="checkbox" id="toggle" class="toggle-checkbox">
+
+    <!-- Label for the checkbox, acts as the button -->
+    <label for="toggle" class="toggle-btn">☰</label>
+
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#">Class Joining</a></li>
+            <li><a href="#">My Courses</a></li>
+            <li><a href="#">Recordings</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper">
+        
+        <!-- Top Bar with Search Bar and Username -->
+        <header class="top-bar">
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-bar">
+            </div>
+            <div class="username-dropdown">
+                <button class="dropbtn">Welcome, User</button>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Main Content Area -->
+            <section class="courses">
+            <h2>My Courses</h2>
+            <div class="course-list">
+                <div class="course-item">
+                    <h3>Course Title 1</h3>
+                    <p>Brief description of the course.</p>
+                </div>
+                <div class="course-item">
+                    <h3>Course Title 2</h3>
+                    <p>Brief description of the course.</p>
+                </div>
+                <!-- Add more courses as needed -->
+            </div>
+        </section>
+    </div>
+</body>
+</html>
